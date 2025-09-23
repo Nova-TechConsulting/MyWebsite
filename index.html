@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nova-Tech Consulting — AI Agents, Automation & Apps</title>
-  <meta name="description" content="Nova-Tech Consulting builds AI agents, enterprise automations, and modern applications. Strategy, delivery, and training across Microsoft Copilot Studio, Power Platform, and Azure AI." />
-  <meta property="og:title" content="Nova-Tech Consulting — AI Agents, Automation & Apps" />
-  <meta property="og:description" content="AI agents, enterprise automation, and app development for measurable outcomes." />
+  <title>Nova-Tech Consulting — AI, Automation & Modern Apps</title>
+  <meta name="description" content="Nova-Tech Consulting is a boutique consultancy specializing in AI, automation, and modern applications. We help enterprises move from strategy to measurable outcomes with governance and scale." />
+  <meta property="og:title" content="Nova-Tech Consulting — AI, Automation & Modern Apps" />
+  <meta property="og:description" content="Strategy to shipped outcomes: AI assistants, resilient automations, and modern apps for measurable impact." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.nova-techconsulting.com/" />
   <link rel="icon" href="assets/logo.svg">
@@ -14,10 +14,14 @@
   <link rel="stylesheet" href="assets/site.css" />
   <script defer src="assets/site.js"></script>
 
-  <!-- Safety net in case site.css doesn't have the animation -->
+  <!-- Minimal helpers (kept local and vendor-agnostic) -->
   <style>
+    /* Marquee animation for industries */
     @keyframes scrollLeft { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-    .animate-scroll-slow { animation: scrollLeft 22s linear infinite; } /* a touch slower for bigger logos */
+    .animate-scroll-slow { animation: scrollLeft 22s linear infinite; }
+    /* Optional subtle card hover */
+    .card { transition: box-shadow .2s ease, transform .2s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(15, 23, 42, 0.08); }
   </style>
 </head>
 
@@ -54,104 +58,36 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
       <div class="max-w-3xl">
         <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
-          Build <span class="underline decoration-sky-300/60">AI Agents</span>, Automations & Modern Apps—fast.
+          From AI strategy to <span class="underline decoration-sky-300/60">shipped outcomes</span>.
         </h1>
         <p class="mt-4 text-lg text-sky-100">
-          We help enterprises design, ship, and scale AI solutions across Microsoft Copilot Studio, Power Platform, and Azure AI—backed by governance and measurable ROI.
+          We design customer-ready assistants, resilient automations, and modern apps—built with governance, security, and measurable ROI from the start.
         </p>
         <div class="mt-8 flex flex-col sm:flex-row gap-3">
           <a href="contact.html" class="inline-flex items-center justify-center rounded-xl bg-white text-slate-900 px-5 py-3 font-semibold shadow hover:shadow-lg">Start a project</a>
-          <a href="services.html" class="inline-flex items-center justify-center rounded-xl border border-white/40 px-5 py-3 font-semibold">See services</a>
+          <a href="services.html" class="inline-flex items-center justify-center rounded-xl border border-white/40 px-5 py-3 font-semibold">Explore services</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Trusted / Carousel INSIDE a card -->
+  <!-- Industries marquee (text-only, professional) -->
   <section class="bg-slate-50">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
       <p class="text-center text-sm uppercase tracking-widest text-slate-500">
-        Trusted across healthcare, finance, and tech
+        Industries we serve
       </p>
-
       <div class="mt-6">
         <div class="rounded-2xl border border-slate-200 bg-white p-6">
-          <!-- clip the scroller to the card -->
           <div class="relative overflow-hidden">
-            <!-- edge fades -->
+            <!-- Edge fades -->
             <div class="pointer-events-none absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white to-transparent"></div>
             <div class="pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-white to-transparent"></div>
 
-            <!-- BIGGER logos + slower scroll -->
-            <div class="flex items-center gap-10 animate-scroll-slow will-change-transform">
-              <img src="assets/logos/healthcare.svg" alt="Healthcare" class="h-14 sm:h-16 md:h-20 lg:h-24 w-auto">
-              <img src="assets/logos/finance.svg" alt="Finance" class="h-14 sm:h-16 md:h-20 lg:h-24 w-auto">
-              <img src="assets/logos/tech.svg" alt="Tech" class="h-14 sm:h-16 md:h-20 lg:h-24 w-auto">
-              <img src="assets/logos/retail.svg" alt="Retail" class="h-14 sm:h-16 md:h-20 lg:h-24 w-auto">
-              <img src="assets/logos/education.svg" alt="Education" class="h-14 sm:h-16 md:h-20 lg:h-24 w-auto">
-              <img src="assets/logos/energy.svg" alt="Energy" class="h-14 sm:h-16 md:h-20 lg:h-24 w-auto">
-              <img src="assets/logos/public-sector.svg" alt="Public Sector" class="h-14 sm:h-16 md:h-20 lg:h-24 w-auto">
-              <img src="assets/logos/media.svg" alt="Media" class="h-14 sm:h-16 md:h-20 lg:h-24 w-auto>
-
-              <!-- duplicates for seamless loop -->
-              <img src="assets/logos/healthcare.svg" alt="Healthcare" class="h-14 sm:h-16 md:h-20 lg:h-24 w-auto">
-              <img src="assets/logos/finance.svg" alt="Finance" class="h-14 sm:h-16 md:h-20 lg:h-24 w-auto">
-              <img src="assets/logos/tech.svg" alt="Tech" class="h-14 sm:h-16 md:h-20 lg:h-24 w-auto">
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /card -->
-    </div>
-  </section>
-
-  <!-- Core offerings -->
-  <section class="py-20">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <h2 class="text-3xl font-bold">Core offerings</h2>
-        <p class="mt-3 text-slate-600">From strategy to shipped software—tailored to your industry and compliance needs.</p>
-      </div>
-
-      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <!-- Card 1 -->
-        <div class="card rounded-2xl border border-slate-200 p-6 bg-white">
-          <h3 class="font-semibold text-lg">Customer-Facing AI Assistants</h3>
-          <p class="mt-2 text-slate-600">
-            Design helpful, brand-safe assistants that answer questions, complete tasks, and hand off to humans—improving CSAT and reducing handle time.
-          </p>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="card rounded-2xl border border-slate-200 p-6 bg-white">
-          <h3 class="font-semibold text-lg">Process Automation & Copilots</h3>
-          <p class="mt-2 text-slate-600">
-            Streamline repetitive work across sales, service, finance, and operations with robust automations and human-in-the-loop workflows that cut cycle time and errors.
-          </p>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="card rounded-2xl border border-slate-200 p-6 bg-white">
-          <h3 class="font-semibold text-lg">Apps, Data & Insights</h3>
-          <p class="mt-2 text-slate-600">
-            Build secure internal apps and data experiences that surface the right information at the right moment—driving better decisions and measurable ROI.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="border-t border-slate-200">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 text-sm text-slate-600 flex flex-col sm:flex-row items-center justify-between gap-3">
-      <p>© <span id="year">2025</span> Nova-Tech Consulting LLC. All rights reserved.</p>
-      <nav class="flex items-center gap-4">
-        <a href="about.html" class="hover:text-slate-900">About</a>
-        <a href="services.html" class="hover:text-slate-900">Services</a>
-        <a href="contact.html" class="hover:text-slate-900">Contact</a>
-      </nav>
-    </div>
-  </footer>
-
-</body>
-</html>
+            <div class="flex items-center gap-6 animate-scroll-slow will-change-transform whitespace-nowrap">
+              <!-- One full sequence -->
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-5 py-2 text-sm font-medium text-slate-700">Financial Services</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-5 py-2 text-sm font-medium text-slate-700">Insurance</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-5 py-2 text-sm font-medium text-slate-700">Healthcare</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-5 py-2 text-sm font-medium text-slate-700">Energy</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50
