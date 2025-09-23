@@ -16,12 +16,14 @@
 
   <!-- Minimal helpers (kept local and vendor-agnostic) -->
   <style>
-    /* Marquee animation for industries */
+    /* Industries marquee */
     @keyframes scrollLeft { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
     .animate-scroll-slow { animation: scrollLeft 22s linear infinite; }
     /* Optional subtle card hover */
     .card { transition: box-shadow .2s ease, transform .2s ease; }
     .card:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(15, 23, 42, 0.08); }
+    /* Soft gradient for CTA */
+    .cta-gradient { background: radial-gradient(1200px 600px at 10% -20%, rgba(56,189,248,.25), transparent), radial-gradient(1000px 600px at 90% 120%, rgba(14,165,233,.2), transparent); }
   </style>
 </head>
 
@@ -90,4 +92,231 @@
               <span class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-5 py-2 text-sm font-medium text-slate-700">Insurance</span>
               <span class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-5 py-2 text-sm font-medium text-slate-700">Healthcare</span>
               <span class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-5 py-2 text-sm font-medium text-slate-700">Energy</span>
-              <span class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-5 py-2 text-sm font-medium text-slate-700">Retail</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-5 py-2 text-sm font-medium text-slate-700">Education</span>
+
+              <!-- Duplicate for seamless loop -->
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-5 py-2 text-sm font-medium text-slate-700">Financial Services</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-5 py-2 text-sm font-medium text-slate-700">Insurance</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-5 py-2 text-sm font-medium text-slate-700">Healthcare</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-5 py-2 text-sm font-medium text-slate-700">Energy</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-5 py-2 text-sm font-medium text-slate-700">Retail</span>
+              <span class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-5 py-2 text-sm font-medium text-slate-700">Education</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core offerings -->
+  <section class="py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h2 class="text-3xl font-bold">Core offerings</h2>
+        <p class="mt-3 text-slate-600">From discovery to production—focused on outcomes, security, and adoption.</p>
+      </div>
+
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Card 1 -->
+        <div class="card rounded-2xl border border-slate-200 p-6 bg-white">
+          <h3 class="font-semibold text-lg">Customer-Facing AI Assistants</h3>
+          <p class="mt-2 text-slate-600">
+            Helpful, brand-safe assistants that answer questions, complete tasks, and hand off to humans—improving CSAT and reducing handle time.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card rounded-2xl border border-slate-200 p-6 bg-white">
+          <h3 class="font-semibold text-lg">Process Automation & Copilots</h3>
+          <p class="mt-2 text-slate-600">
+            Resilient automations and human-in-the-loop workflows that reduce cycle time and errors across operations, service, and finance.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card rounded-2xl border border-slate-200 p-6 bg-white">
+          <h3 class="font-semibold text-lg">Apps, Data & Insights</h3>
+          <p class="mt-2 text-slate-600">
+            Modern apps and data experiences that surface the right information at the right moment—driving better decisions and measurable ROI.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Values -->
+  <section class="bg-white py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h2 class="text-3xl font-bold">Our values</h2>
+        <p class="mt-3 text-slate-600">Principles that guide every engagement.</p>
+      </div>
+
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Trust -->
+        <div class="rounded-2xl border border-slate-200 p-6 bg-white">
+          <div class="flex items-start gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6l7-4z"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div>
+              <h3 class="font-semibold">We build trust</h3>
+              <p class="mt-1 text-slate-600">Transparent roadmaps, clear metrics, and proactive communication—so you always know what’s next and why.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Customer-centric -->
+        <div class="rounded-2xl border border-slate-200 p-6 bg-white">
+          <div class="flex items-start gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 20a8 8 0 0116 0"/></svg>
+            <div>
+              <h3 class="font-semibold">Customer-centric by design</h3>
+              <p class="mt-1 text-slate-600">We align to your goals and constraints, shaping solutions that fit your teams, processes, and risk profile.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deep expertise -->
+        <div class="rounded-2xl border border-slate-200 p-6 bg-white">
+          <div class="flex items-start gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            <div>
+              <h3 class="font-semibold">Deep AI & automation expertise</h3>
+              <p class="mt-1 text-slate-600">From orchestration patterns to governance, we bring hard-won playbooks to accelerate value and reduce risk.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Global presence -->
+        <div class="rounded-2xl border border-slate-200 p-6 bg-white">
+          <div class="flex items-start gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M2.5 9h19M2.5 15h19M12 3a15 15 0 010 18M12 3a15 15 0 000 18"/></svg>
+            <div>
+              <h3 class="font-semibold">Global presence</h3>
+              <p class="mt-1 text-slate-600">Distributed talent and delivery—covering discovery, build, and run with follow-the-sun responsiveness.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Regulated industries -->
+        <div class="rounded-2xl border border-slate-200 p-6 bg-white">
+          <div class="flex items-start gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l8 4v5c0 5-5 7-8 9-3-2-8-4-8-9V7l8-4z"/><path d="M9 12h6"/></svg>
+            <div>
+              <h3 class="font-semibold">Regulated industry expertise</h3>
+              <p class="mt-1 text-slate-600">Experience across finance, healthcare, and public sector—embedding security, compliance, and observability from day one.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Spacer card for layout balance -->
+        <div class="hidden lg:block rounded-2xl border border-dashed border-slate-200 p-6 bg-white/50"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies -->
+  <section class="bg-slate-50 py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h2 class="text-3xl font-bold">Case studies</h2>
+        <p class="mt-3 text-slate-600">A snapshot of outcomes we’ve delivered.</p>
+      </div>
+
+      <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <!-- CS 1 -->
+        <article class="rounded-2xl border border-slate-200 bg-white p-6 flex flex-col">
+          <div class="text-xs font-medium uppercase tracking-widest text-slate-500">Financial Services</div>
+          <h3 class="mt-2 text-lg font-semibold">Customer support assistant</h3>
+          <p class="mt-2 text-slate-600">Launched a governed assistant integrated with existing systems to resolve top FAQs and triage complex cases.</p>
+          <div class="mt-4 grid grid-cols-3 gap-3">
+            <div class="rounded-xl bg-slate-50 border border-slate-200 p-3">
+              <div class="text-xl font-bold text-slate-900">-32%</div>
+              <div class="text-xs text-slate-500">Avg. handle time</div>
+            </div>
+            <div class="rounded-xl bg-slate-50 border border-slate-200 p-3">
+              <div class="text-xl font-bold text-slate-900">+14 pts</div>
+              <div class="text-xs text-slate-500">CSAT</div>
+            </div>
+            <div class="rounded-xl bg-slate-50 border border-slate-200 p-3">
+              <div class="text-xl font-bold text-slate-900">99.9%</div>
+              <div class="text-xs text-slate-500">Uptime</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CS 2 -->
+        <article class="rounded-2xl border border-slate-200 bg-white p-6 flex flex-col">
+          <div class="text-xs font-medium uppercase tracking-widest text-slate-500">Healthcare</div>
+          <h3 class="mt-2 text-lg font-semibold">Clinical documentation copilot</h3>
+          <p class="mt-2 text-slate-600">Drafted visit notes from transcripts with human-in-the-loop review and full audit trail.</p>
+          <div class="mt-4 grid grid-cols-3 gap-3">
+            <div class="rounded-xl bg-slate-50 border border-slate-200 p-3">
+              <div class="text-xl font-bold text-slate-900">-45%</div>
+              <div class="text-xs text-slate-500">Note time</div>
+            </div>
+            <div class="rounded-xl bg-slate-50 border border-slate-200 p-3">
+              <div class="text-xl font-bold text-slate-900">+2.3×</div>
+              <div class="text-xs text-slate-500">Throughput</div>
+            </div>
+            <div class="rounded-xl bg-slate-50 border border-slate-200 p-3">
+              <div class="text-xl font-bold text-slate-900">100%</div>
+              <div class="text-xs text-slate-500">PHI masked</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CS 3 -->
+        <article class="rounded-2xl border border-slate-200 bg-white p-6 flex flex-col">
+          <div class="text-xs font-medium uppercase tracking-widest text-slate-500">Retail</div>
+          <h3 class="mt-2 text-lg font-semibold">Inventory & pricing automation</h3>
+          <p class="mt-2 text-slate-600">Automated price updates and low-stock alerts across channels with approvals and rollback safeguards.</p>
+          <div class="mt-4 grid grid-cols-3 gap-3">
+            <div class="rounded-xl bg-slate-50 border border-slate-200 p-3">
+              <div class="text-xl font-bold text-slate-900">-60%</div>
+              <div class="text-xs text-slate-500">Ops effort</div>
+            </div>
+            <div class="rounded-xl bg-slate-50 border border-slate-200 p-3">
+              <div class="text-xl font-bold text-slate-900">+18%</div>
+              <div class="text-xs text-slate-500">Margin lift</div>
+            </div>
+            <div class="rounded-xl bg-slate-50 border border-slate-200 p-3">
+              <div class="text-xl font-bold text-slate-900">0</div>
+              <div class="text-xs text-slate-500">Critical incidents</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA band -->
+  <section class="cta-gradient py-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="rounded-3xl bg-slate-900 text-white p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-lg">
+        <div class="max-w-3xl">
+          <h2 class="text-2xl md:text-3xl font-bold">Ready to move from pilot to production?</h2>
+          <p class="mt-2 text-slate-300">Let’s identify high-value use cases, validate quickly, and scale responsibly—with governance and measurable ROI.</p>
+        </div>
+        <div class="flex gap-3">
+          <a href="contact.html" class="inline-flex items-center justify-center rounded-xl bg-white text-slate-900 px-5 py-3 font-semibold hover:shadow">Book a discovery call</a>
+          <a href="services.html" class="inline-flex items-center justify-center rounded-xl border border-white/30 px-5 py-3 font-semibold text-white hover:bg-white/10">See our services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 text-sm text-slate-600 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p>© <span id="year">2025</span> Nova-Tech Consulting LLC. All rights reserved.</p>
+      <nav class="flex items-center gap-4">
+        <a href="about.html" class="hover:text-slate-900">About</a>
+        <a href="services.html" class="hover:text-slate-900">Services</a>
+        <a href="contact.html" class="hover:text-slate-900">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
